@@ -77,7 +77,7 @@ Admin Dashboard
 ⚙️ How to Run the Project
 
 1-Clone the repository
-    git clone https://github.com/HiadarIssa/E-Commerce.git
+    git clone https://github.com/Haidar-Issa/E-Commerce.git
     cd E-Commerce
 
 2-Configure environment variables
