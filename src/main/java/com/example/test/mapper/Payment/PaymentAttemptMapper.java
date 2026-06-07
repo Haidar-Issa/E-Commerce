@@ -1,7 +1,7 @@
-package com.example.test.Mapper.Payment;
+package com.example.test.mapper.Payment;
 
-import com.example.test.DTO.Payment.AttemptDTO;
-import com.example.test.Entity.Payment.PaymentAttempt;
+import com.example.test.dto.Payment.AttemptDTO;
+import com.example.test.entity.Payment.PaymentAttempt;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 

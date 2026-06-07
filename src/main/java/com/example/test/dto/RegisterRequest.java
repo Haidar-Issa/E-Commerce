@@ -1,6 +1,5 @@
-package com.example.test.DTO;
+package com.example.test.dto;
 
-import com.example.test.Enums.Role;
 import lombok.Data;
 
 @Data

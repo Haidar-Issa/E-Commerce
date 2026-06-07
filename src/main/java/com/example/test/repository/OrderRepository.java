@@ -1,6 +1,6 @@
-package com.example.test.Repository;
+package com.example.test.repository;
 
-import com.example.test.Entity.Order;
+import com.example.test.entity.Order;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

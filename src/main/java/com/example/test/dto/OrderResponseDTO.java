@@ -1,6 +1,6 @@
-package com.example.test.DTO;
+package com.example.test.dto;
 
-import com.example.test.Enums.Status;
+import com.example.test.enums.Status;
 import lombok.Data;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

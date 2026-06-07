@@ -1,9 +1,8 @@
-package com.example.test.Security;
+package com.example.test.security;
 
-import com.example.test.Entity.User;
+import com.example.test.entity.User;
 import lombok.AllArgsConstructor;
 import lombok.NonNull;
-import org.jspecify.annotations.Nullable;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

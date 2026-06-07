@@ -1,7 +1,7 @@
-package com.example.test.Repository;
+package com.example.test.repository;
 
-import com.example.test.Entity.RefreshToken;
-import com.example.test.Entity.User;
+import com.example.test.entity.RefreshToken;
+import com.example.test.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

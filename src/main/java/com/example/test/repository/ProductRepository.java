@@ -1,7 +1,7 @@
-package com.example.test.Repository;
+package com.example.test.repository;
 
-import com.example.test.Entity.Category;
-import com.example.test.Entity.Product;
+import com.example.test.entity.Category;
+import com.example.test.entity.Product;
 import jakarta.validation.constraints.DecimalMin;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

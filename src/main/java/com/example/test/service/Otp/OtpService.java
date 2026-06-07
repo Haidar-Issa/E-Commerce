@@ -1,6 +1,6 @@
-package com.example.test.Service.Otp;
+package com.example.test.service.Otp;
 
-import com.example.test.Service.Email.MailService;
+import com.example.test.service.Email.MailService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;

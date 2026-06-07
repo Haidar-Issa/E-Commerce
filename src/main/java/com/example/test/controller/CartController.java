@@ -1,8 +1,8 @@
-package com.example.test.Controller;
+package com.example.test.controller;
 
-import com.example.test.DTO.ApiResponse;
-import com.example.test.DTO.CartResponseDTO;
-import com.example.test.Service.CartService;
+import com.example.test.dto.ApiResponse;
+import com.example.test.dto.CartResponseDTO;
+import com.example.test.service.CartService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

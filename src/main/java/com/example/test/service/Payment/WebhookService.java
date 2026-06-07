@@ -1,15 +1,15 @@
-package com.example.test.Service.Payment;
+package com.example.test.service.Payment;
 
-import com.example.test.Entity.Payment.Payment;
-import com.example.test.Entity.Payment.PaymentAttempt;
-import com.example.test.Entity.Payment.WebhookLog;
-import com.example.test.Enums.PaymentAttemptStatus;
-import com.example.test.Enums.PaymentStatus;
-import com.example.test.Enums.RefundStatus;
-import com.example.test.Repository.Payment.PaymentAttemptRepository;
-import com.example.test.Repository.Payment.PaymentRepository;
-import com.example.test.Repository.Payment.RefundRepository;
-import com.example.test.Repository.Payment.WebhookLogRepository;
+import com.example.test.entity.Payment.Payment;
+import com.example.test.entity.Payment.PaymentAttempt;
+import com.example.test.entity.Payment.WebhookLog;
+import com.example.test.enums.PaymentAttemptStatus;
+import com.example.test.enums.PaymentStatus;
+import com.example.test.enums.RefundStatus;
+import com.example.test.repository.Payment.PaymentAttemptRepository;
+import com.example.test.repository.Payment.PaymentRepository;
+import com.example.test.repository.Payment.RefundRepository;
+import com.example.test.repository.Payment.WebhookLogRepository;
 import com.stripe.exception.SignatureVerificationException;
 import com.stripe.model.*;
 import com.stripe.net.Webhook;
@@ -214,7 +214,7 @@ public class WebhookService {
         String refundId = refund.getId();
         String refundStatus = refund.getStatus();
 
-        com.example.test.Entity.Payment.Refund refundEntity = refundRepository.findById(refundId).orElseGet(
+        com.example.test.entity.Payment.Refund refundEntity = refundRepository.findById(refundId).orElseGet(
                 () -> createNewRefundEntity(paymentAttempt, payment, refund, charge)
         );
 
@@ -241,7 +241,7 @@ public class WebhookService {
 
     }
 
-    private com.example.test.Entity.Payment.Refund createNewRefundEntity(PaymentAttempt paymentAttempt, Payment payment, Refund refund, Charge charge) {
+    private com.example.test.entity.Payment.Refund createNewRefundEntity(PaymentAttempt paymentAttempt, Payment payment, Refund refund, Charge charge) {
 
         String refundId = refund.getId();
         Long refundedAmount = refund.getAmount();
@@ -249,7 +249,7 @@ public class WebhookService {
         String rPaymentIntentId = charge.getPaymentIntent();
 
         try {
-            return com.example.test.Entity.Payment.Refund.builder()
+            return com.example.test.entity.Payment.Refund.builder()
                     .providerRefundId(refundId)
                     .providerPaymentId(rPaymentIntentId)
                     .chargeId(charge.getId())

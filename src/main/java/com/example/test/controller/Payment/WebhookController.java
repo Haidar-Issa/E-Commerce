@@ -1,7 +1,7 @@
-package com.example.test.Controller.Payment;
+package com.example.test.controller.Payment;
 
 
-import com.example.test.Service.Payment.WebhookService;
+import com.example.test.service.Payment.WebhookService;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

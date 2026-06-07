@@ -1,6 +1,6 @@
-package com.example.test.Entity.Payment;
+package com.example.test.entity.Payment;
 
-import com.example.test.Enums.PaymentAttemptStatus;
+import com.example.test.enums.PaymentAttemptStatus;
 import jakarta.persistence.*;
 import lombok.*;
 import org.bson.types.ObjectId;

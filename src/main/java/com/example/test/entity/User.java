@@ -1,6 +1,6 @@
-package com.example.test.Entity;
+package com.example.test.entity;
 
-import com.example.test.Enums.Role;
+import com.example.test.enums.Role;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

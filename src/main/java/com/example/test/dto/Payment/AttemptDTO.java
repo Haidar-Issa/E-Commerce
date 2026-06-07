@@ -1,6 +1,5 @@
-package com.example.test.DTO.Payment;
+package com.example.test.dto.Payment;
 
-import com.example.test.Enums.PaymentAttemptStatus;
 import lombok.Builder;
 import lombok.Data;
 

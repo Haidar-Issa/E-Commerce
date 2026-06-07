@@ -1,7 +1,7 @@
-package com.example.test.Mapper;
+package com.example.test.mapper;
 
-import com.example.test.DTO.OrderItemResponseDTO;
-import com.example.test.Entity.OrderItem;
+import com.example.test.dto.OrderItemResponseDTO;
+import com.example.test.entity.OrderItem;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 

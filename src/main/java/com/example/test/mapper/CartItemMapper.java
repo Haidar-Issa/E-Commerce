@@ -1,7 +1,7 @@
-package com.example.test.Mapper;
+package com.example.test.mapper;
 
-import com.example.test.DTO.CartItemResponseDTO;
-import com.example.test.Entity.CartItem;
+import com.example.test.dto.CartItemResponseDTO;
+import com.example.test.entity.CartItem;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 

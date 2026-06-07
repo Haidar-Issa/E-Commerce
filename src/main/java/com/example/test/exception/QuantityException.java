@@ -1,4 +1,4 @@
-package com.example.test.Exception;
+package com.example.test.exception;
 
 public class QuantityException extends RuntimeException {
     public QuantityException(String message) {

@@ -1,7 +1,6 @@
-package com.example.test.Entity;
+package com.example.test.entity;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -53,4 +52,4 @@ public class Category {
     public void onUpdate() {
         this.updateAt = LocalDateTime.now();
     }
-}
+}   

@@ -1,6 +1,5 @@
-package com.example.test.DTO;
+package com.example.test.dto;
 
-import lombok.Builder;
 import lombok.Data;
 
 @Data

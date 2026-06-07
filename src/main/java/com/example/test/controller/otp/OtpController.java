@@ -1,8 +1,7 @@
-package com.example.test.Controller.OTP;
+package com.example.test.controller.otp;
 
-import com.example.test.DTO.ApiResponse;
-import com.example.test.Service.Email.MailService;
-import com.example.test.Service.Otp.OtpService;
+import com.example.test.dto.ApiResponse;
+import com.example.test.service.Otp.OtpService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,8 +1,8 @@
-package com.example.test.Entity.Payment;
+package com.example.test.entity.Payment;
 
-import com.example.test.Entity.Order;
-import com.example.test.Entity.User;
-import com.example.test.Enums.PaymentStatus;
+import com.example.test.entity.Order;
+import com.example.test.entity.User;
+import com.example.test.enums.PaymentStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

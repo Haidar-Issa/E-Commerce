@@ -1,15 +1,15 @@
-package com.example.test.Service;
+package com.example.test.service;
 
-import com.example.test.DTO.AuthResponse;
-import com.example.test.DTO.LoginRequest;
-import com.example.test.DTO.RegisterRequest;
-import com.example.test.Entity.RefreshToken;
-import com.example.test.Entity.User;
-import com.example.test.Enums.Role;
-import com.example.test.Exception.UserAlreadyExistsException;
-import com.example.test.Repository.RefreshTokenRepository;
-import com.example.test.Repository.UserRepository;
-import com.example.test.Security.JWT.JwtService;
+import com.example.test.dto.AuthResponse;
+import com.example.test.dto.LoginRequest;
+import com.example.test.dto.RegisterRequest;
+import com.example.test.entity.RefreshToken;
+import com.example.test.entity.User;
+import com.example.test.enums.Role;
+import com.example.test.exception.UserAlreadyExistsException;
+import com.example.test.repository.RefreshTokenRepository;
+import com.example.test.repository.UserRepository;
+import com.example.test.security.JWT.JwtService;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.bson.types.ObjectId;
@@ -36,7 +36,7 @@ public class AuthService {
     public void register(RegisterRequest registerRequest) {
 
         if (userRepository.existsUserByEmail(registerRequest.getEmail())) {
-            throw new UserAlreadyExistsException("User with email " + registerRequest.getEmail() + " already exists");
+            throw new UserAlreadyExistsException(STR."User with email \{registerRequest.getEmail()} already exists");
         }
 
         User user = new User();

@@ -1,9 +1,9 @@
-package com.example.test.Service;
+package com.example.test.service;
 
 
-import com.example.test.DTO.CategoryRequestDTO;
-import com.example.test.DTO.CategoryResponseDTO;
-import com.example.test.Entity.Category;
+import com.example.test.dto.CategoryRequestDTO;
+import com.example.test.dto.CategoryResponseDTO;
+import com.example.test.entity.Category;
 import jakarta.transaction.Transactional;
 
 import java.util.List;

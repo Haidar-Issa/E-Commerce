@@ -1,6 +1,6 @@
-package com.example.test.Repository;
+package com.example.test.repository;
 
-import com.example.test.Entity.CartItem;
+import com.example.test.entity.CartItem;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CartItemRepository extends JpaRepository<CartItem,String> {

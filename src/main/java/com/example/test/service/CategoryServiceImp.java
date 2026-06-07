@@ -1,13 +1,12 @@
-package com.example.test.Service;
+package com.example.test.service;
 
-import com.example.test.DTO.CategoryRequestDTO;
-import com.example.test.DTO.CategoryResponseDTO;
-import com.example.test.Entity.Category;
-import com.example.test.Exception.CartNotFoundException;
-import com.example.test.Exception.CategoryNotFoundException;
-import com.example.test.Mapper.CategoryMapper;
-import com.example.test.Repository.CategoryRepository;
-import jakarta.persistence.EntityNotFoundException;
+import com.example.test.dto.CategoryRequestDTO;
+import com.example.test.dto.CategoryResponseDTO;
+import com.example.test.entity.Category;
+import com.example.test.exception.CartNotFoundException;
+import com.example.test.exception.CategoryNotFoundException;
+import com.example.test.mapper.CategoryMapper;
+import com.example.test.repository.CategoryRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

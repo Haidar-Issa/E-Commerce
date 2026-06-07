@@ -1,8 +1,8 @@
-package com.example.test.Controller.Payment;
+package com.example.test.controller.Payment;
 
-import com.example.test.DTO.ApiResponse;
-import com.example.test.Entity.Payment.WebhookLog;
-import com.example.test.Service.Payment.WebhookLogService;
+import com.example.test.dto.ApiResponse;
+import com.example.test.entity.Payment.WebhookLog;
+import com.example.test.service.Payment.WebhookLogService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

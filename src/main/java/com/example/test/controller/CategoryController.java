@@ -1,12 +1,13 @@
-package com.example.test.Controller;
+package com.example.test.controller;
 
-import com.example.test.DTO.ApiResponse;
-import com.example.test.DTO.CategoryRequestDTO;
-import com.example.test.DTO.CategoryResponseDTO;
-import com.example.test.Service.CategoryService;
+import com.example.test.dto.ApiResponse;
+import com.example.test.dto.CategoryRequestDTO;
+import com.example.test.dto.CategoryResponseDTO;
+import com.example.test.service.CategoryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -19,6 +20,7 @@ public class CategoryController {
     private final String path = "/api/categories";
 
     @PostMapping
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<ApiResponse<CategoryResponseDTO>> addCategory(@RequestBody CategoryRequestDTO category) {
         CategoryResponseDTO categoryResponseDTO = categoryService.create(category);
 
@@ -33,6 +35,7 @@ public class CategoryController {
     }
 
     @PutMapping("/{id}")
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<ApiResponse<CategoryResponseDTO>> update(
             @PathVariable String id,
             @RequestBody CategoryRequestDTO category
@@ -50,6 +53,7 @@ public class CategoryController {
     }
 
     @PostMapping("/bulk")
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<ApiResponse<List<CategoryResponseDTO>>> createBulk(
            @RequestBody List<CategoryRequestDTO>categoryRequestDTOS
     ){
@@ -64,6 +68,7 @@ public class CategoryController {
     }
 
     @DeleteMapping("/{id}")
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<ApiResponse<Void>> delete(@PathVariable String id) {
         categoryService.delete(id);
 

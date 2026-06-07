@@ -1,4 +1,4 @@
-package com.example.test.Exception;
+package com.example.test.exception;
 
 public class WebhookLogNotFoundException extends RuntimeException {
     public WebhookLogNotFoundException(String message) {

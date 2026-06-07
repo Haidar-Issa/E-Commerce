@@ -1,10 +1,10 @@
-package com.example.test.Mapper.Payment;
+package com.example.test.mapper.Payment;
 
-import com.example.test.DTO.Payment.AttemptDTO;
-import com.example.test.DTO.Payment.PaymentResponseDTO;
-import com.example.test.Entity.Payment.Payment;
-import com.example.test.Entity.Payment.PaymentAttempt;
-import com.example.test.Mapper.OrderMapper;
+import com.example.test.dto.Payment.AttemptDTO;
+import com.example.test.dto.Payment.PaymentResponseDTO;
+import com.example.test.entity.Payment.Payment;
+import com.example.test.entity.Payment.PaymentAttempt;
+import com.example.test.mapper.OrderMapper;
 import org.mapstruct.AfterMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

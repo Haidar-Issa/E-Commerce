@@ -1,9 +1,9 @@
-package com.example.test.Controller;
+package com.example.test.controller;
 
-import com.example.test.DTO.ApiResponse;
-import com.example.test.DTO.OrderResponseDTO;
-import com.example.test.Enums.Status;
-import com.example.test.Service.OrderService;
+import com.example.test.dto.ApiResponse;
+import com.example.test.dto.OrderResponseDTO;
+import com.example.test.enums.Status;
+import com.example.test.service.OrderService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;

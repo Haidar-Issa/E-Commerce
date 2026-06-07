@@ -1,6 +1,6 @@
-package com.example.test.Entity;
+package com.example.test.entity;
 
-import com.example.test.Enums.Status;
+import com.example.test.enums.Status;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.DecimalMin;
 import lombok.AllArgsConstructor;

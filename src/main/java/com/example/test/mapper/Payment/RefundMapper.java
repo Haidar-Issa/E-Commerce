@@ -1,7 +1,7 @@
-package com.example.test.Mapper.Payment;
+package com.example.test.mapper.Payment;
 
-import com.example.test.DTO.Payment.RefundResponseDTO;
-import com.example.test.Entity.Payment.Refund;
+import com.example.test.dto.Payment.RefundResponseDTO;
+import com.example.test.entity.Payment.Refund;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 

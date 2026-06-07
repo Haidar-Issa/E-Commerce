@@ -1,7 +1,7 @@
-package com.example.test.Controller;
+package com.example.test.controller;
 
-import com.example.test.DTO.*;
-import com.example.test.Service.AuthService;
+import com.example.test.dto.*;
+import com.example.test.service.AuthService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

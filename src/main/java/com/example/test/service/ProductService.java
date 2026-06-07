@@ -1,13 +1,13 @@
-package com.example.test.Service;
+package com.example.test.service;
 
-import com.example.test.DTO.ProductRequestDTO;
-import com.example.test.DTO.ProductResponseDTO;
-import com.example.test.Entity.Category;
-import com.example.test.Entity.Product;
-import com.example.test.Exception.ProductNotFoundException;
-import com.example.test.Mapper.ProductMapper;
-import com.example.test.Repository.CategoryRepository;
-import com.example.test.Repository.ProductRepository;
+import com.example.test.dto.ProductRequestDTO;
+import com.example.test.dto.ProductResponseDTO;
+import com.example.test.entity.Category;
+import com.example.test.entity.Product;
+import com.example.test.exception.ProductNotFoundException;
+import com.example.test.mapper.ProductMapper;
+import com.example.test.repository.CategoryRepository;
+import com.example.test.repository.ProductRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;

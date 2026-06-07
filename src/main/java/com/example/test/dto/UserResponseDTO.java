@@ -1,4 +1,4 @@
-package com.example.test.DTO;
+package com.example.test.dto;
 
 import lombok.Builder;
 import lombok.Data;
@@ -13,5 +13,6 @@ public class UserResponseDTO {
     private String email;
     private String password;
     private String address;
-
+    private String phone;
+    private String role;
 }

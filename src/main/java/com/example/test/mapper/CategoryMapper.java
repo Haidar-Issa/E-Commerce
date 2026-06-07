@@ -1,8 +1,8 @@
-package com.example.test.Mapper;
+package com.example.test.mapper;
 
-import com.example.test.DTO.CategoryRequestDTO;
-import com.example.test.DTO.CategoryResponseDTO;
-import com.example.test.Entity.Category;
+import com.example.test.dto.CategoryRequestDTO;
+import com.example.test.dto.CategoryResponseDTO;
+import com.example.test.entity.Category;
 import org.mapstruct.BeanMapping;
 import org.mapstruct.MappingTarget;
 import org.mapstruct.Mapper;

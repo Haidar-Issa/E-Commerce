@@ -1,8 +1,8 @@
-package com.example.test.Service.Payment;
+package com.example.test.service.Payment;
 
-import com.example.test.Entity.Payment.WebhookLog;
-import com.example.test.Exception.WebhookLogNotFoundException;
-import com.example.test.Repository.Payment.WebhookLogRepository;
+import com.example.test.entity.Payment.WebhookLog;
+import com.example.test.exception.WebhookLogNotFoundException;
+import com.example.test.repository.Payment.WebhookLogRepository;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;

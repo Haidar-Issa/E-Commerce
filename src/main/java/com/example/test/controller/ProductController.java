@@ -1,9 +1,9 @@
-package com.example.test.Controller;
+package com.example.test.controller;
 
-import com.example.test.DTO.ApiResponse;
-import com.example.test.DTO.ProductRequestDTO;
-import com.example.test.DTO.ProductResponseDTO;
-import com.example.test.Service.ProductService;
+import com.example.test.dto.ApiResponse;
+import com.example.test.dto.ProductRequestDTO;
+import com.example.test.dto.ProductResponseDTO;
+import com.example.test.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

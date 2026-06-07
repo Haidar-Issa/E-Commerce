@@ -1,14 +1,15 @@
-package com.example.test.Controller;
+package com.example.test.controller;
 
-import com.example.test.DTO.ApiResponse;
-import com.example.test.DTO.UserRequestDTO;
-import com.example.test.DTO.UserResponseDTO;
-import com.example.test.Service.UserService;
+import com.example.test.dto.ApiResponse;
+import com.example.test.dto.UserRequestDTO;
+import com.example.test.dto.UserResponseDTO;
+import com.example.test.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -23,6 +24,7 @@ public class UserController {
     private final String path = "/api/users";
 
     @GetMapping
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<ApiResponse<List<UserResponseDTO>>> getAll() {
 
         List<UserResponseDTO> users = userService.findAll();
@@ -37,6 +39,7 @@ public class UserController {
     }
 
     @GetMapping("/some_users")
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<ApiResponse<Page<UserResponseDTO>>> getSomeUsers(Pageable pageable) {
 
         Page<UserResponseDTO> users = userService.findSomeUsers(pageable);
@@ -51,6 +54,7 @@ public class UserController {
     }
 
     @GetMapping("/role")
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<ApiResponse<Page<UserResponseDTO>>> getByRole(
             @RequestParam String role,
             Pageable pageable) {
@@ -67,6 +71,7 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<ApiResponse<UserResponseDTO>> getOne(@PathVariable String id) {
         UserResponseDTO user = userService.findById(id);
 
@@ -80,6 +85,7 @@ public class UserController {
     }
 
     @GetMapping("/email")
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<ApiResponse<UserResponseDTO>> getByEmail(@RequestParam String email) {
         UserResponseDTO user = userService.findByEmail(email);
         ApiResponse<UserResponseDTO> response = ApiResponse.create(

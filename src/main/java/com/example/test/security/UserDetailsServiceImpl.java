@@ -1,7 +1,7 @@
-package com.example.test.Security;
+package com.example.test.security;
 
-import com.example.test.Entity.User;
-import com.example.test.Repository.UserRepository;
+import com.example.test.entity.User;
+import com.example.test.repository.UserRepository;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;

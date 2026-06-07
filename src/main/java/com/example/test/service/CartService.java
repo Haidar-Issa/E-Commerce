@@ -1,17 +1,17 @@
-package com.example.test.Service;
+package com.example.test.service;
 
-import com.example.test.DTO.CartItemResponseDTO;
-import com.example.test.DTO.CartResponseDTO;
-import com.example.test.Entity.Cart;
-import com.example.test.Entity.CartItem;
-import com.example.test.Entity.Product;
-import com.example.test.Exception.CartNotFoundException;
-import com.example.test.Exception.ProductNotFoundException;
-import com.example.test.Mapper.CartItemMapper;
-import com.example.test.Repository.CartItemRepository;
-import com.example.test.Repository.CartRepository;
-import com.example.test.Repository.ProductRepository;
-import com.example.test.Repository.UserRepository;
+import com.example.test.dto.CartItemResponseDTO;
+import com.example.test.dto.CartResponseDTO;
+import com.example.test.entity.Cart;
+import com.example.test.entity.CartItem;
+import com.example.test.entity.Product;
+import com.example.test.exception.CartNotFoundException;
+import com.example.test.exception.ProductNotFoundException;
+import com.example.test.mapper.CartItemMapper;
+import com.example.test.repository.CartItemRepository;
+import com.example.test.repository.CartRepository;
+import com.example.test.repository.ProductRepository;
+import com.example.test.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

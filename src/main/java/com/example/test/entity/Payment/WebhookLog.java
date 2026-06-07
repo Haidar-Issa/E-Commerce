@@ -1,4 +1,4 @@
-package com.example.test.Entity.Payment;
+package com.example.test.entity.Payment;
 
 import jakarta.persistence.*;
 import lombok.*;

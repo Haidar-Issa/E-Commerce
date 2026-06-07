@@ -1,24 +1,24 @@
-package com.example.test.Service.Payment;
+package com.example.test.service.Payment;
 
-import com.example.test.DTO.Payment.PaymentRequestDTO;
-import com.example.test.DTO.Payment.PaymentResponseDTO;
-import com.example.test.DTO.Payment.RefundRequestDTO;
-import com.example.test.DTO.Payment.RefundResponseDTO;
-import com.example.test.Entity.Order;
-import com.example.test.Entity.Payment.Payment;
-import com.example.test.Entity.Payment.PaymentAttempt;
-import com.example.test.Entity.User;
-import com.example.test.Enums.PaymentAttemptStatus;
-import com.example.test.Enums.PaymentStatus;
-import com.example.test.Enums.RefundStatus;
-import com.example.test.Exception.OrderNotFoundException;
-import com.example.test.Mapper.Payment.PaymentIntentMapper;
-import com.example.test.Mapper.Payment.RefundMapper;
-import com.example.test.Repository.OrderRepository;
-import com.example.test.Repository.Payment.PaymentAttemptRepository;
-import com.example.test.Repository.Payment.PaymentRepository;
-import com.example.test.Repository.Payment.RefundRepository;
-import com.example.test.Repository.UserRepository;
+import com.example.test.dto.Payment.PaymentRequestDTO;
+import com.example.test.dto.Payment.PaymentResponseDTO;
+import com.example.test.dto.Payment.RefundRequestDTO;
+import com.example.test.dto.Payment.RefundResponseDTO;
+import com.example.test.entity.Order;
+import com.example.test.entity.Payment.Payment;
+import com.example.test.entity.Payment.PaymentAttempt;
+import com.example.test.entity.User;
+import com.example.test.enums.PaymentAttemptStatus;
+import com.example.test.enums.PaymentStatus;
+import com.example.test.enums.RefundStatus;
+import com.example.test.exception.OrderNotFoundException;
+import com.example.test.mapper.Payment.PaymentIntentMapper;
+import com.example.test.mapper.Payment.RefundMapper;
+import com.example.test.repository.OrderRepository;
+import com.example.test.repository.Payment.PaymentAttemptRepository;
+import com.example.test.repository.Payment.PaymentRepository;
+import com.example.test.repository.Payment.RefundRepository;
+import com.example.test.repository.UserRepository;
 import com.stripe.Stripe;
 import com.stripe.exception.StripeException;
 import com.stripe.model.*;
@@ -131,7 +131,7 @@ public class PaymentService {
             Payment payment = attempt.getPayment();
 
 
-            com.example.test.Entity.Payment.Refund refund = com.example.test.Entity.Payment.Refund.builder()
+            com.example.test.entity.Payment.Refund refund = com.example.test.entity.Payment.Refund.builder()
                     .providerRefundId(stripeRefund.getId())
                     .providerPaymentId(refundRequestDTO.getPaymentIntentId())
                     .chargeId(stripeRefund.getCharge())

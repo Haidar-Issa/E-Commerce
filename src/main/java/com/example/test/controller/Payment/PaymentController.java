@@ -1,11 +1,11 @@
-package com.example.test.Controller.Payment;
+package com.example.test.controller.Payment;
 
-import com.example.test.DTO.ApiResponse;
-import com.example.test.DTO.Payment.PaymentRequestDTO;
-import com.example.test.DTO.Payment.PaymentResponseDTO;
-import com.example.test.DTO.Payment.RefundRequestDTO;
-import com.example.test.DTO.Payment.RefundResponseDTO;
-import com.example.test.Service.Payment.PaymentService;
+import com.example.test.dto.ApiResponse;
+import com.example.test.dto.Payment.PaymentRequestDTO;
+import com.example.test.dto.Payment.PaymentResponseDTO;
+import com.example.test.dto.Payment.RefundRequestDTO;
+import com.example.test.dto.Payment.RefundResponseDTO;
+import com.example.test.service.Payment.PaymentService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

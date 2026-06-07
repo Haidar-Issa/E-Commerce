@@ -1,8 +1,8 @@
-package com.example.test.Mapper;
+package com.example.test.mapper;
 
-import com.example.test.DTO.ProductRequestDTO;
-import com.example.test.DTO.ProductResponseDTO;
-import com.example.test.Entity.Product;
+import com.example.test.dto.ProductRequestDTO;
+import com.example.test.dto.ProductResponseDTO;
+import com.example.test.entity.Product;
 import org.mapstruct.*;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.example.test.Exception;
+package com.example.test.exception;
 
 public class OrderAlreadyExistsException extends RuntimeException {
     public OrderAlreadyExistsException(String message) {

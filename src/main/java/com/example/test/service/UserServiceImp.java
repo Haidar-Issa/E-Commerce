@@ -1,13 +1,13 @@
-package com.example.test.Service;
+package com.example.test.service;
 
-import com.example.test.DTO.UserRequestDTO;
-import com.example.test.DTO.UserResponseDTO;
-import com.example.test.Entity.User;
-import com.example.test.Exception.UserAlreadyExistsException;
-import com.example.test.Exception.UserNotFoundException;
-import com.example.test.Mapper.UserMapper;
-import com.example.test.Repository.UserRepository;
-import com.example.test.Service.Otp.OtpService;
+import com.example.test.dto.UserRequestDTO;
+import com.example.test.dto.UserResponseDTO;
+import com.example.test.entity.User;
+import com.example.test.exception.UserAlreadyExistsException;
+import com.example.test.exception.UserNotFoundException;
+import com.example.test.mapper.UserMapper;
+import com.example.test.repository.UserRepository;
+import com.example.test.service.Otp.OtpService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -38,7 +38,6 @@ public class UserServiceImp implements UserService {
             throw new UserAlreadyExistsException("User with this email already exists");
         }
 
-        user.setPassword(password.encode(userRequestDTO.getPassword()));
         User savedUser = userRepository.save(user);
         return userMapper.toDto(savedUser);
     }

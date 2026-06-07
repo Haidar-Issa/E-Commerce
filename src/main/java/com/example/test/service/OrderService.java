@@ -1,10 +1,8 @@
-package com.example.test.Service;
+package com.example.test.service;
 
-import com.example.test.DTO.OrderResponseDTO;
-import com.example.test.Enums.Status;
+import com.example.test.dto.OrderResponseDTO;
+import com.example.test.enums.Status;
 import org.springframework.data.domain.Page;
-
-import java.util.List;
 
 public interface OrderService {
 

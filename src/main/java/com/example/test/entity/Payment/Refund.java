@@ -1,7 +1,6 @@
-package com.example.test.Entity.Payment;
+package com.example.test.entity.Payment;
 
-import com.example.test.Enums.RefundStatus;
-import com.stripe.param.RefundCreateParams;
+import com.example.test.enums.RefundStatus;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.DecimalMin;
 import lombok.*;

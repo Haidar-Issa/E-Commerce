@@ -1,12 +1,9 @@
-package com.example.test.Service;
+package com.example.test.service;
 
-import com.example.test.DTO.ApiResponse;
-import com.example.test.DTO.UserRequestDTO;
-import com.example.test.DTO.UserResponseDTO;
-import com.example.test.Entity.User;
+import com.example.test.dto.UserRequestDTO;
+import com.example.test.dto.UserResponseDTO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 
@@ -33,5 +30,7 @@ public interface UserService {
     void updatePassword(String otp,String email , String password);
 
     void sendOtp(String email);
+
+
 }
 
