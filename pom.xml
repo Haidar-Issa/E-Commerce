@@ -331,6 +331,7 @@
                 <configuration>
                     <source>21</source>
                     <target>21</target>
+                    <parameters>true</parameters>
                     <annotationProcessorPaths>
                         <path>
                             <groupId>org.projectlombok</groupId>
@@ -354,7 +355,6 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
                 <configuration>
-
                     <argLine>--enable-preview</argLine>
                     <forkCount>1</forkCount>
                     <reuseForks>true</reuseForks>

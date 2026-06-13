@@ -25,8 +25,8 @@ public class ProductController {
 
     @GetMapping
     public ResponseEntity<ApiResponse<List<ProductResponseDTO>>> getAll(
-            @RequestParam(defaultValue = "0") int page,
-            @RequestParam(defaultValue = "10") int size
+            @RequestParam(name= "page" , defaultValue = "0" ) int page,
+            @RequestParam(name ="size", defaultValue = "10") int size
     ) {
         Pageable pageable = PageRequest.of(page, size, Sort.by("category").descending());
         List<ProductResponseDTO> products = productService.getAll(pageable);

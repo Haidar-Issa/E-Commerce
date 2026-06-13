@@ -41,7 +41,7 @@ public class Product {
 
     @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable(name = "product_images", joinColumns = @JoinColumn(name = "product_id"))
-    @Column(name = "image")
+    @Column(name = "images")
     private List<String> images;
 
     @ManyToOne( fetch = FetchType.LAZY)

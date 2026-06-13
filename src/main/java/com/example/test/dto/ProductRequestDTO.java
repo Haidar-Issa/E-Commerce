@@ -9,6 +9,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -30,5 +31,7 @@ public class ProductRequestDTO {
 
     @NotNull
     private String description;
+
+    private List<String> images;
 
 }

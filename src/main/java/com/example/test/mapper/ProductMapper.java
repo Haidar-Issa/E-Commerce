@@ -14,6 +14,7 @@ public interface ProductMapper {
     ProductResponseDTO toDTO(Product product);
 
     @Mapping(source = "categoryId", target = "category.id")
+    @Mapping(source = "images" , target = "images")
     Product toEntity(ProductRequestDTO productRequestDTO);
 
     List<ProductResponseDTO> toDTOList(List<Product> products);
